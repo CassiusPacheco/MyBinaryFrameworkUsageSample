@@ -5,8 +5,7 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/CassiusPacheco/MyBinaryFrameworkUsageSample.git",
       "state" : {
-        "revision" : "9266bb52edfc64e7fd2ac29c4358d64689ccb7df",
-        "version" : "0.0.1"
+        "revision" : "d92fe3d0fd4c41c8b6a09e984a64e893f1d85a20"
       }
     },
     {

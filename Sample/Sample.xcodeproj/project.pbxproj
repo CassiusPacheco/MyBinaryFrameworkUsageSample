@@ -11,7 +11,7 @@
 		6A889C1428F7F8F2003F7A84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A889C1328F7F8F2003F7A84 /* ContentView.swift */; };
 		6A889C1628F7F8F3003F7A84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A889C1528F7F8F3003F7A84 /* Assets.xcassets */; };
 		6A889C1928F7F8F3003F7A84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A889C1828F7F8F3003F7A84 /* Preview Assets.xcassets */; };
-		6A889C2428F8006F003F7A84 /* MyBinaryFrameworkUsage in Frameworks */ = {isa = PBXBuildFile; productRef = 6A889C2328F8006F003F7A84 /* MyBinaryFrameworkUsage */; };
+		6A99EB6028F949DA00A5DCB1 /* MyBinaryFrameworkUsage in Frameworks */ = {isa = PBXBuildFile; productRef = 6A99EB5F28F949DA00A5DCB1 /* MyBinaryFrameworkUsage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A889C2428F8006F003F7A84 /* MyBinaryFrameworkUsage in Frameworks */,
+				6A99EB6028F949DA00A5DCB1 /* MyBinaryFrameworkUsage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 			);
 			name = Sample;
 			packageProductDependencies = (
-				6A889C2328F8006F003F7A84 /* MyBinaryFrameworkUsage */,
+				6A99EB5F28F949DA00A5DCB1 /* MyBinaryFrameworkUsage */,
 			);
 			productName = Sample;
 			productReference = 6A889C0E28F7F8F2003F7A84 /* Sample.app */;
@@ -117,7 +117,7 @@
 			);
 			mainGroup = 6A889C0528F7F8F2003F7A84;
 			packageReferences = (
-				6A889C2228F8006F003F7A84 /* XCRemoteSwiftPackageReference "MyBinaryFrameworkUsageSample" */,
+				6A99EB5E28F949DA00A5DCB1 /* XCRemoteSwiftPackageReference "MyBinaryFrameworkUsageSample" */,
 			);
 			productRefGroup = 6A889C0F28F7F8F2003F7A84 /* Products */;
 			projectDirPath = "";
@@ -157,6 +157,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -217,6 +218,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -349,20 +351,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6A889C2228F8006F003F7A84 /* XCRemoteSwiftPackageReference "MyBinaryFrameworkUsageSample" */ = {
+		6A99EB5E28F949DA00A5DCB1 /* XCRemoteSwiftPackageReference "MyBinaryFrameworkUsageSample" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/CassiusPacheco/MyBinaryFrameworkUsageSample.git";
 			requirement = {
-				kind = exactVersion;
-				version = 0.0.1;
+				kind = revision;
+				revision = d92fe3d0fd4c41c8b6a09e984a64e893f1d85a20;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6A889C2328F8006F003F7A84 /* MyBinaryFrameworkUsage */ = {
+		6A99EB5F28F949DA00A5DCB1 /* MyBinaryFrameworkUsage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6A889C2228F8006F003F7A84 /* XCRemoteSwiftPackageReference "MyBinaryFrameworkUsageSample" */;
+			package = 6A99EB5E28F949DA00A5DCB1 /* XCRemoteSwiftPackageReference "MyBinaryFrameworkUsageSample" */;
 			productName = MyBinaryFrameworkUsage;
 		};
 /* End XCSwiftPackageProductDependency section */
