@@ -12,6 +12,7 @@ let package = Package(
     products: [
         .library(
             name: "MyBinaryFrameworkUsage",
+            type: .static,
             targets: ["MyBinaryFrameworkUsageTarget"]
         ),
     ],
