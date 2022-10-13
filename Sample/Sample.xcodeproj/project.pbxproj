@@ -353,8 +353,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/CassiusPacheco/MyBinaryFrameworkUsageSample.git";
 			requirement = {
-				kind = exactVersion;
-				version = 0.0.1;
+				kind = revision;
+				revision = 684ee30cb91b1e52d63add8e0843d4a9b65c8f88;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
