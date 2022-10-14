@@ -1,0 +1,23 @@
+PODS:
+  - MyBinaryFramework (0.0.1):
+    - Valet
+  - Valet (4.1.1)
+
+DEPENDENCIES:
+  - MyBinaryFramework (from `./BinaryPod/Binary.podspec`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Valet
+
+EXTERNAL SOURCES:
+  MyBinaryFramework:
+    :podspec: "./BinaryPod/Binary.podspec"
+
+SPEC CHECKSUMS:
+  MyBinaryFramework: d984a0cde4fe09420394456a300796181b5356f3
+  Valet: 11ab0e318b7284888a81392e36136563b4af5deb
+
+PODFILE CHECKSUM: 1be9e671a66cad648e24927405b230921d80c385
+
+COCOAPODS: 1.11.3

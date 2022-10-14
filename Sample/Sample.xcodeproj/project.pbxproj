@@ -11,15 +11,18 @@
 		6A889C1428F7F8F2003F7A84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A889C1328F7F8F2003F7A84 /* ContentView.swift */; };
 		6A889C1628F7F8F3003F7A84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A889C1528F7F8F3003F7A84 /* Assets.xcassets */; };
 		6A889C1928F7F8F3003F7A84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A889C1828F7F8F3003F7A84 /* Preview Assets.xcassets */; };
-		6A889C2428F8006F003F7A84 /* MyBinaryFrameworkUsage in Frameworks */ = {isa = PBXBuildFile; productRef = 6A889C2328F8006F003F7A84 /* MyBinaryFrameworkUsage */; };
+		DE2735A4375AF7F4579AB8EB /* Pods_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4D6E3E5077B127325A6B47 /* Pods_Sample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040093FBD7845426B4294FF5 /* Pods-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample.release.xcconfig"; path = "Target Support Files/Pods-Sample/Pods-Sample.release.xcconfig"; sourceTree = "<group>"; };
+		1C4D6E3E5077B127325A6B47 /* Pods_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A889C0E28F7F8F2003F7A84 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A889C1128F7F8F2003F7A84 /* SampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleApp.swift; sourceTree = "<group>"; };
 		6A889C1328F7F8F2003F7A84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6A889C1528F7F8F3003F7A84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A889C1828F7F8F3003F7A84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD49F87ABBAC156C03F0C2C7 /* Pods-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample.debug.xcconfig"; path = "Target Support Files/Pods-Sample/Pods-Sample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,18 +30,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A889C2428F8006F003F7A84 /* MyBinaryFrameworkUsage in Frameworks */,
+				DE2735A4375AF7F4579AB8EB /* Pods_Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C09EFE4C5EF09FCF636150B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD49F87ABBAC156C03F0C2C7 /* Pods-Sample.debug.xcconfig */,
+				040093FBD7845426B4294FF5 /* Pods-Sample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6A889C0528F7F8F2003F7A84 = {
 			isa = PBXGroup;
 			children = (
 				6A889C1028F7F8F2003F7A84 /* Sample */,
 				6A889C0F28F7F8F2003F7A84 /* Products */,
+				1C09EFE4C5EF09FCF636150B /* Pods */,
+				CAC3805BC645EF4AD47E9818 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +83,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CAC3805BC645EF4AD47E9818 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C4D6E3E5077B127325A6B47 /* Pods_Sample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,18 +98,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A889C1C28F7F8F3003F7A84 /* Build configuration list for PBXNativeTarget "Sample" */;
 			buildPhases = (
+				FDF0B929B580DB328B8B6A7A /* [CP] Check Pods Manifest.lock */,
 				6A889C0A28F7F8F2003F7A84 /* Sources */,
 				6A889C0B28F7F8F2003F7A84 /* Frameworks */,
 				6A889C0C28F7F8F2003F7A84 /* Resources */,
+				0DABE547E3D4714812ECCD59 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Sample;
-			packageProductDependencies = (
-				6A889C2328F8006F003F7A84 /* MyBinaryFrameworkUsage */,
-			);
 			productName = Sample;
 			productReference = 6A889C0E28F7F8F2003F7A84 /* Sample.app */;
 			productType = "com.apple.product-type.application";
@@ -116,9 +137,6 @@
 				Base,
 			);
 			mainGroup = 6A889C0528F7F8F2003F7A84;
-			packageReferences = (
-				6A889C2228F8006F003F7A84 /* XCRemoteSwiftPackageReference "MyBinaryFrameworkUsageSample" */,
-			);
 			productRefGroup = 6A889C0F28F7F8F2003F7A84 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +157,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DABE547E3D4714812ECCD59 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sample/Pods-Sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDF0B929B580DB328B8B6A7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A889C0A28F7F8F2003F7A84 /* Sources */ = {
@@ -269,6 +329,7 @@
 		};
 		6A889C1D28F7F8F3003F7A84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD49F87ABBAC156C03F0C2C7 /* Pods-Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -298,6 +359,7 @@
 		};
 		6A889C1E28F7F8F3003F7A84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 040093FBD7845426B4294FF5 /* Pods-Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -347,25 +409,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		6A889C2228F8006F003F7A84 /* XCRemoteSwiftPackageReference "MyBinaryFrameworkUsageSample" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/CassiusPacheco/MyBinaryFrameworkUsageSample.git";
-			requirement = {
-				kind = revision;
-				revision = a1bfd99e62090153be12dcaa102ef74bb50585ba;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		6A889C2328F8006F003F7A84 /* MyBinaryFrameworkUsage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6A889C2228F8006F003F7A84 /* XCRemoteSwiftPackageReference "MyBinaryFrameworkUsageSample" */;
-			productName = MyBinaryFrameworkUsage;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6A889C0628F7F8F2003F7A84 /* Project object */;
 }
